@@ -1,4 +1,4 @@
-info.df <- read.csv('../samples/SCANB.table.V12.csv', stringsAsFactors=FALSE)
+info.df <- read.csv('data/SCANB.table.V12.csv', stringsAsFactors=FALSE)
 cohort.df <- subset(info.df, !isWGSfail & !is.na(info.df$WGS.Normal.Coverage.X ) )
 
 

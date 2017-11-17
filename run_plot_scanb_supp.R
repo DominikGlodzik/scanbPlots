@@ -1,4 +1,4 @@
-info.df <- read.csv('../samples/SCANB.table.V12.csv')
+info.df <- read.csv('data/SCANB.table.V12.csv')
 
 seqd.df <- subset(info.df, !is.na(WGS.Normal.Coverage.X))
 seqd.df$adjv_cyto[is.na(seqd.df$adjv_cyto)] <- 'No'
